@@ -1,0 +1,189 @@
+:root {
+    --colorefontsunero: white;
+    --fontsezione: 'Alegreya SC', serif;
+    --fontsottotitoli: 'Courier New', Courier, monospace;
+    --fontnero: black;
+    --fontcontenuto: 'Karla', sans-serif;
+    --bgcontainersinistra: #272B31;
+
+
+}
+
+.nounder { 
+    text-decoration: none !important;
+}
+.pmb {
+    margin-bottom: 0px;
+}
+
+.fontcontenuto {
+    font-family: var(--fontcontenuto);
+    /* word-spacing: -3px; */
+    font-size: 15px;
+}
+
+.fontnero {
+    color: var(--fontnero);
+}
+
+.fontbianco {
+    color: var(--colorefontsunero);
+}
+
+.fontbianco:hover {
+    color: var(--colorefontsunero);
+}
+
+.bgblack {
+    background-color: var(--bgcontainersinistra)
+}
+
+h1 {
+    color: var(--colorefontsunero);
+    font-family: var(--fontsezione) !important;
+    font-size: xx-large;
+    /* font-size: 60px; */
+    /* opacity: 0.5; */
+    /* margin-top: -35px; */
+}
+
+h5 {
+    color: var(--colorefontsunero);
+    font-size: medium !important;
+    
+    font-family: var(--fontsottotitoli) !important;
+}
+
+/* h1>span{
+    font-family: 'Courier New', Courier, monospace !important;
+    opacity:1 !important;
+    color: white !important;
+} */
+
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.bglight {
+    background-color: #f0f0fE;
+}
+
+.sezione {
+    font-family: var(--fontsezione) !important;
+}
+
+.hr {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3) !important;
+}
+
+.hrb {
+    border-bottom: 1px solid rgb(39, 42, 48, 0.3) !important;
+}
+
+.border-right {
+    border-right: 1px solid rgb(39, 42, 48, 0.3) !important;
+}
+
+.border-top {
+    border-top: 1px solid rgb(39, 42, 48, 0.3) !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+.ul1 {
+    list-style-type: circle;
+    /* margin-left: -15px; */
+}
+
+.container {
+    overflow: hidden;
+}
+
+.angoli {
+    border-radius: 20px;
+}
+
+.bg-secondary {
+    background-color: rgb(108, 117, 125, 0.2) !important;
+}
+
+.bg-dark {
+    background-color: rgb(108, 117, 125, 0.99) !important;
+
+}
+
+.p1 {
+    width: 20% !important;
+
+}
+
+.p2 {
+    width: 40% !important;
+
+}
+
+.p3 {
+    width: 60% !important;
+
+}
+
+.p4 {
+    width: 80% !important;
+
+}
+
+.p5 {
+    width: 100% !important;
+
+}
+
+.scroll {
+    height: 400px;
+    overflow-y: scroll;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(242, 242, 242, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136, 0.05);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 84, 84, 0.1);
+}
+
+.animazione {
+    transition: all .2s ease-in-out;
+    
+}
+.animazione:hover{
+    transform: scale(1.1);
+}
+.wid{
+    width: 100%;
+}
+.hei{
+    height: 100%;
+}
