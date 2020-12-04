@@ -5,6 +5,7 @@
     --fontnero: black;
     --fontcontenuto: 'Karla', sans-serif;
     --bgcontainersinistra: #272B31;
+    --bgcontainerdestra: #f0f0fE;
 
 
 }
@@ -69,7 +70,7 @@ h5 {
 }
 
 .bglight {
-    background-color: #f0f0fE;
+    background-color: var(--bgcontainerdestra)
 }
 
 .sezione {
