@@ -5,35 +5,228 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
     <title>Antonio Pio Cavaliere</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Reenie+Beanie&display=swap"
-        rel="stylesheet">
-
+    rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-
+    rel="stylesheet">
+    
+    
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <link rel="stylesheet" href="style.css">
-
-
+    
+    <style>
+        :root {
+            --colorefontsunero: white;
+            --fontsezione: 'Alegreya SC', serif;
+            --fontsottotitoli: 'Courier New', Courier, monospace;
+            --fontnero: black;
+            --fontcontenuto: 'Karla', sans-serif;
+            --bgcontainersinistra: #272B31;
+            --bgcontainerdestra: #f0f0fE;
+            
+            
+        }
+        
+        .nounder { 
+            text-decoration: none !important;
+        }
+        .pmb {
+            margin-bottom: 0px;
+        }
+        
+        .fontcontenuto {
+            font-family: var(--fontcontenuto);
+            /* word-spacing: -3px; */
+            font-size: 15px;
+        }
+        
+        .fontnero {
+            color: var(--fontnero);
+        }
+        
+        .fontbianco {
+            color: var(--colorefontsunero);
+        }
+        
+        .fontbianco:hover {
+            color: var(--colorefontsunero);
+        }
+        
+        .bgblack {
+            background-color: var(--bgcontainersinistra)
+        }
+        
+        h1 {
+            color: var(--colorefontsunero);
+            font-family: var(--fontsezione) !important;
+            font-size: xx-large;
+            /* font-size: 60px; */
+            /* opacity: 0.5; */
+            /* margin-top: -35px; */
+        }
+        
+        h5 {
+            color: var(--colorefontsunero);
+            font-size: medium !important;
+            
+            font-family: var(--fontsottotitoli) !important;
+        }
+        
+        /* h1>span{
+            font-family: 'Courier New', Courier, monospace !important;
+            opacity:1 !important;
+            color: white !important;
+        } */
+        
+        .z0 {
+            z-index: 0;
+        }
+        
+        .z1 {
+            z-index: 1;
+        }
+        
+        .bglight {
+            background-color: var(--bgcontainerdestra)
+        }
+        
+        .sezione {
+            font-family: var(--fontsezione) !important;
+        }
+        
+        .hr {
+            border-bottom: 1px solid rgb(255, 255, 255, 0.3) !important;
+        }
+        
+        .hrb {
+            border-bottom: 1px solid rgb(39, 42, 48, 0.3) !important;
+        }
+        
+        .border-right {
+            border-right: 1px solid rgb(39, 42, 48, 0.3) !important;
+        }
+        
+        .border-top {
+            border-top: 1px solid rgb(39, 42, 48, 0.3) !important;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-left: -15px;
+        }
+        
+        .ul1 {
+            list-style-type: circle;
+            /* margin-left: -15px; */
+        }
+        
+        .container {
+            overflow: hidden;
+        }
+        
+        .angoli {
+            border-radius: 20px;
+        }
+        
+        .bg-secondary {
+            background-color: rgb(108, 117, 125, 0.2) !important;
+        }
+        
+        .bg-dark {
+            background-color: rgb(108, 117, 125, 0.99) !important;
+            
+        }
+        
+        .p1 {
+            width: 20% !important;
+            
+        }
+        
+        .p2 {
+            width: 40% !important;
+            
+        }
+        
+        .p3 {
+            width: 60% !important;
+            
+        }
+        
+        .p4 {
+            width: 80% !important;
+            
+        }
+        
+        .p5 {
+            width: 100% !important;
+            
+        }
+        
+        .scroll {
+            height: 400px;
+            overflow-y: scroll;
+            
+        }
+        
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(242, 242, 242, 0.2);
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(136, 136, 136, 0.05);
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(84, 84, 84, 0.1);
+        }
+        
+        .animazione {
+            transition: all .2s ease-in-out;
+            
+        }
+        .animazione:hover{
+            transform: scale(1.1);
+        }
+        .wid{
+            width: 100%;
+        }
+        .hei{
+            height: 100%;
+        }
+    </style>
+    
+    
 </head>
 
 <body>
-
+    
     <div class="container angoli mt-1 mb-5">
         <div class="row">
             <div class="container-fluid">
@@ -41,279 +234,323 @@
                     <div class="col-12 col-md-4  text-center bgblack p-0">
                         <!-- <div class="row">
                             <div class="col-12 col-md-6">
-                               immagine tonda più piccola 
+                                immagine tonda più piccola 
                             </div>
                         </div> -->
                         <img class="img-fluid z0 rounded"
-                            src="./Img/66648014_10219623678813016_8437814168999952384_n.jpg" alt="">
+                        src="https://i.ibb.co/N6cH28q/66648014-10219623678813016-8437814168999952384-n.jpg" alt="">
+                        
+                        
+                        
+                        
                         <!--side bar di sinistra da sotto l'immagine -->
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
                                     <h1 class="z1 text-center p-0 pt-3 ">Antonio Pio <span> Cavaliere</span></h1>
-                                    <h5>Full stack developer</h5>
+                                    <h5 class="">Full stack web developer</h5>
                                     <div class="container mt-5">
                                         <div class="row text-left">
                                             <div class="col-12 ">
                                                 <p class="hr sezione">Informazioni personali</p>
-
+                                                
                                                 <ul>
                                                     <li class=""><span class="bold">Nato a:</span> <span>San Giovanni
-                                                            Rotondo (FG)</span></li>
-                                                    <li><span class="bold">Data di nascita:</span>
-                                                        <span>21-04-1988</span></li>
-                                                    <li><span class="bold">Residenza:</span> <span>Via Pelagio Palagi
-                                                            36/2</span> </li>
-                                                    <li><span class="bold">Città:</span><span> </span><span>Bologna
-                                                            (BO)</span> </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Sezione contatti -->
-                                    <div class="container mt-5">
-                                        <div class="row text-left">
-                                            <div class="col-12 ">
-                                                <p class="hr sezione">Contatti</p>
-
-                                                <ul>
-                                                    <li class=""><span class="bold">Tel:</span><a
-                                                            href="tel:+393669798157"
-                                                            class="fontbianco"><span>+393669798157</span></a></li>
-                                                    <li><span class="bold">Email:</span> <a class="fontbianco"
-                                                            href="mailto:cavaliereantoniopio@gmail.com"><span>cavaliereantoniopio@gmail.com</span></a>
-                                                    </li>
-                                                    <li><span class="bold">Website:</span> <a class="fontbianco"
-                                                            href="https://www.cavaliereantoniopio.it"
-                                                            target="blank"><span>www.cavaliereantoniopio.it</span></a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- sezione social -->
-                                    <div class="container mt-5">
-                                        <div class="row text-left">
-                                            <div class="col-12 ">
-
-                                                <p class="hr sezione">Social</p>
-                                                <div class="row">
-                                                    <div class="col-12 pl-3 pt-3">
-                                                        <ul class="icone">
-                                                            <li class="animazione">
-                                                                <a class="text-white nounder"
-                                                                    href="https://www.linkedin.com/in/antonio-pio-cavaliere-944a70b7/"
-                                                                    target="blank">
-                                                                    <i class="fa fa-linkedin fa-2x pr-5"
-                                                                        aria-hidden="true"></i> Antonio Pio Cavaliere
-                                                                </a>
-                                                            </li>
-                                                            <li class="animazione">
-                                                                <a class="text-white nounder"
-                                                                    href="https://www.instagram.com/pio_cavaliere/">
-                                                                    <i class="fa fa-instagram fa-2x pt-3 pr-5"
-                                                                        aria-hidden="true"></i>
-                                                                    @Pio Cavaliere
-                                                                </a>
-                                                            </li>
-                                                            <li class="animazione">
-                                                                <a class="text-white nounder"
-                                                                    href="https://www.facebook.com/antonio.cavaliere.9/">
-                                                                    <i class="fa fa-facebook fa-2x pt-3 pr-5"
-                                                                        aria-hidden="true"></i>
-                                                                    <span class="pl-2"> Pio Cavaliere</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="animazione">
-                                                                <a class="text-white"
-                                                                    href="https://www.flickr.com/photos/186674974@N06/">
-                                                                    <i class="fa fa-flickr fa-2x pt-3 pr-5"
-                                                                        aria-hidden="true"></i>
-                                                                    Antonio Pio Cavaliere
-                                                                </a>
-                                                            </li>
-
-
-                                                        </ul>
+                                                        Rotondo (FG)</span></li>
+                                                        <li><span class="bold">Data di nascita:</span>
+                                                            <span>21-04-1988</span></li>
+                                                            <li><span class="bold">Residenza:</span> <span>Via Pelagio Palagi
+                                                                36/2</span> </li>
+                                                                <li><span class="bold">Città:</span><span> </span><span>Bologna
+                                                                    (BO)</span> </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                    <!-- Sezione contatti -->
+                                                    <div class="container mt-5">
+                                                        <div class="row text-left">
+                                                            <div class="col-12 ">
+                                                                <p class="hr sezione">Contatti</p>
+                                                                
+                                                                <ul>
+                                                                    <li class=""><span class="bold">Tel:</span><a
+                                                                        href="tel:+393669798157"
+                                                                        class="fontbianco"><span>+393669798157</span></a></li>
+                                                                        <li><span class="bold">Email:</span> <a class="fontbianco"
+                                                                            href="mailto:cavaliereantoniopio@gmail.com"><span>cavaliereantoniopio@gmail.com</span></a>
+                                                                        </li>
+                                                                        <li><span class="bold">Website:</span> <a class="fontbianco"
+                                                                            href="https://www.cavaliereantoniopio.it"
+                                                                            target="blank"><span>www.cavaliereantoniopio.it</span></a>
+                                                                        </li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- sezione social -->
+                                                        <div class="container mt-5">
+                                                            <div class="row text-left">
+                                                                <div class="col-12 ">
+                                                                    
+                                                                    <p class="hr sezione">Social</p>
+                                                                    <div class="row">
+                                                                        <div class="col-12 pl-3 pt-3">
+                                                                            <ul class="icone">
+                                                                                <li class="animazione">
+                                                                                    <a class="text-white nounder"
+                                                                                    href="https://www.linkedin.com/in/antonio-pio-cavaliere-944a70b7/"
+                                                                                    target="blank">
+                                                                                    <i class="fa fa-linkedin fa-2x pr-5"
+                                                                                    aria-hidden="true"></i> Antonio Pio Cavaliere
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="animazione">
+                                                                                <a class="text-white nounder"
+                                                                                href="https://www.instagram.com/pio_cavaliere/">
+                                                                                <i class="fa fa-instagram fa-2x pt-3 pr-5"
+                                                                                aria-hidden="true"></i>
+                                                                                @Pio Cavaliere
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="animazione">
+                                                                            <a class="text-white nounder"
+                                                                            href="https://www.facebook.com/antonio.cavaliere.9/">
+                                                                            <i class="fa fa-facebook fa-2x pt-3 pr-5"
+                                                                            aria-hidden="true"></i>
+                                                                            <span class="pl-2"> Pio Cavaliere</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="animazione">
+                                                                        <a class="text-white"
+                                                                        href="https://www.flickr.com/photos/186674974@N06/">
+                                                                        <i class="fa fa-flickr fa-2x pt-3 pr-5"
+                                                                        aria-hidden="true"></i>
+                                                                        Antonio Pio Cavaliere
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    
                                                 </div>
-
-
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- inizio corpo -->
-                    <div class="col-12 col-md-8 text-left bglight fontnero">
-                        <div class="container">
-                            <div class="row">
-                                <div class="container mt-5">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <!-- sezione about me -->
-                                            <p class="hrb sezione">About Me</p>
-                                            <p class="fontcontenuto">L'esperienza maturata nel settore IT mi ha permesso
-                                                di
-                                                acquisire: efficaci competenze di coding. Grazie alle Metodologie Agili
-                                                applicate al coding, ho sviluppato
-                                                ottime doti relazionali, sia con il pubblico/cliente che con il team di
-                                                lavoro.
-                                                Sorriso e cortesia sono altre mie peculiarità che ritengo fondamentali
-                                                in un lavoro che richiede contatto col
-                                                pubblico. Il mio essere eclettico mi permette anche di imparare
-                                                velocemente le nozioni richieste per ogni
-                                                tipo di mansione.
-
-                                            </p>
-                                            <!-- Sezione skills -->
-                                            <p class="hrb sezione">Skills</p>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">HTML</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p4" role="progressbar"
+                        <!-- inizio corpo -->
+                        <div class="col-12 col-md-8 text-left bglight fontnero">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="container mt-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <!-- sezione about me -->
+                                                <p class="hrb sezione">About Me</p>
+                                                <p class="fontcontenuto">L'esperienza maturata nel settore IT mi ha permesso
+                                                    di
+                                                    acquisire: efficaci competenze di coding. Grazie alle Metodologie Agili
+                                                    applicate al coding, ho sviluppato
+                                                    ottime doti relazionali, sia con il pubblico/cliente che con il team di
+                                                    lavoro.
+                                                    Sorriso e cortesia sono altre mie peculiarità che ritengo fondamentali
+                                                    in un lavoro che richiede contatto col
+                                                    pubblico. Il mio essere eclettico mi permette anche di imparare
+                                                    velocemente le nozioni richieste per ogni
+                                                    tipo di mansione.
+                                                    
+                                                </p>
+                                                <!-- Sezione skills -->
+                                                <p class="hrb sezione">Skills</p>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">HTML</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p5" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">CSS</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p4" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">CSS</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p5" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">JavaScript</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p4" role="progressbar"
+                                                        
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Bootstrap 4</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p5" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Bootstrap 4</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p4" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">JavaScript</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p3" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Vue.js</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p1" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Vue.js</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p1" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">PHP</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p3" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">PHP</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p3" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Laravel</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p2" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Laravel</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p4" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">A. Photoshop</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p3" role="progressbar"
+                                                        
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Web3.js</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p1" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Adobe XD</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p2" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">SCRUM</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p1" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">A. Premiere Pro</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p2" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Git</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p4" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Adobe AI</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p5" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">MySQL</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p3" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-6 col-lg-4">
-                                                        <span class="fontcontenuto bold">Suite Office</span>
-                                                        <div class="progress  bg-secondary">
-                                                            <div class="progress-bar bg-dark p4" role="progressbar"
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">A. Photoshop</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p3" role="progressbar"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
+                                                            </div>
                                                         </div>
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Adobe XD</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p2" role="progressbar"
+                                                                aria-valuenow="10" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">A. Premiere Pro</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p2" role="progressbar"
+                                                                aria-valuenow="10" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-lg-4">
+                                                            <span class="fontcontenuto bold">Adobe AI</span>
+                                                            <div class="progress  bg-secondary">
+                                                                <div class="progress-bar bg-dark p5" role="progressbar"
+                                                                aria-valuenow="10" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
                                                     </div>
-
-
                                                 </div>
-                                            </div>
-                                            <!-- Sezione Esperienze -->
-                                            <p class="hrb sezione mt-4 mb-0">Esperienze</p>
-                                            <div class="container-fluid scroll shadow-sm">
-                                                <div class="row">
-                                                    <div class="col-4 col-lg-2 border-right">
-                                                        <div
+                                                <!-- Sezione Esperienze -->
+                                                <p class="hrb sezione mt-4 mb-0">Esperienze</p>
+                                                <div class="container-fluid shadow-sm">
+                                                    <div class="row">
+                                                        <div class="col-4 col-lg-2 border-right">
+                                                            <div
                                                             class="d-flex justify-content-center align-items-center hei">
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <p class="bold">Feb-21<br><span
-                                                                            class="font-weight-light fontcontenuto">3
-                                                                            mesi</span></p>
+                                                                        class="font-weight-light fontcontenuto">3
+                                                                        mesi</span></p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-8 col-lg-10 ">
-                                                        <h5 class="sezione fontnero pt-3 bold">Presto.it ( Aulab
-                                                            HackAdemy )</h5>
-                                                        <h6 class="sezione font-weight-light fontnero pt-0">Cooding
-                                                            Bootcamp</h6>
-                                                        <ul>
-                                                            <li class="ul1"><span class="fontcontenuto">Lorem ipsum
-                                                                    dolor sit amet consectetur adipisicing elit. Quam
-                                                                    repellat vero laborum eligendi minus totam, fugit
-                                                                    iusto error necessitatibus sint modi odio vel
-                                                                    eveniet. Accusamus tenetur dignissimos corporis
-                                                                    molestias eos!<span class="bold"> PHP, Laravel,
+                                                        <div class="col-8 col-lg-10 ">
+                                                            <h5 class="sezione fontnero pt-3 bold">Full Stack Web Developer presso Hackademy 21.0 Aulab srl
+                                                            </h5>
+                                                            <h6 class="sezione font-weight-light fontnero pt-0">Bootcamp intensivo in Full Stack Web Developer Aulab s.r.l.</h6>
+                                                            <h6 class="sezione font-weight-light fontnero pt-0">Skill ottenute:</h6>
+
+                                                            <ul>
+                                                                <li class="ul1"><span class="fontcontenuto">
+                                                                    
+                                                                    concetti principali di programmazione ( variabili, condizioni e iterazioni ) e utilizzo 
+                                                                    <span class="bold"> console unix;</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="ul1"><span class="fontcontenuto">
+                                                                    programmazione Front-End 
+                                                                    
+                                                                    
+                                                                    <span class="bold"> ( HTML5, CSS, JavaScript, Bootstrap 4, Vue.js);</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="ul1"><span class="fontcontenuto">
+                                                                    
+                                                                    
+                                                                    <span class="bold"> PHP, Laravel,
                                                                         Vue.js,
-                                                                        Javascript.</span></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <!-- Seconda esperienza -->
-                                                    <div class="col-4 col-lg-2 border-right border-top">
-                                                        <div
+                                                                        Javascript.</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Seconda esperienza -->
+                                                        <div class="col-4 col-lg-2 border-right border-top">
+                                                            <div
                                                             class="d-flex justify-content-center align-items-center hei">
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <p class="bold">Mar-20<br><span
-                                                                            class="font-weight-light fontcontenuto"></span>
+                                                                        class="font-weight-light fontcontenuto"></span>
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -322,233 +559,233 @@
                                                     <div class="col-8 col-lg-10 border-top">
                                                         <h5 class="sezione fontnero pt-3 bold">Sviluppatore web
                                                             Front-end</h5>
-                                                        <h6 class="sezione font-weight-light fontnero pt-0">Freelance
-                                                        </h6>
-                                                        <ul>
-                                                            <li class="ul1"><span class="fontcontenuto">Sviluppo
+                                                            <h6 class="sezione font-weight-light fontnero pt-0">Freelance
+                                                            </h6>
+                                                            <ul>
+                                                                <li class="ul1"><span class="fontcontenuto">Sviluppo
                                                                     siti-web per artisti
                                                                     (fotografi, pittori, etc...). Linguaggi e framework
                                                                     utilizzati:
                                                                     <span class="bold"><strong> HTML,
-                                                                            CSS, JS, Bootstrap 4.</strong></span></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <!-- Terza esperienza -->
-                                                    <div class="col-4 col-lg-2 border-right border-top">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center hei">
-                                                            <div class="row justify-content-center">
-                                                                <div class="col-12">
-                                                                    <p class="bold ">Feb-15<br>Feb-20<br><span
+                                                                        CSS, JS, Bootstrap 4.</strong></span></span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Terza esperienza -->
+                                                            <div class="col-4 col-lg-2 border-right border-top">
+                                                                <div
+                                                                class="d-flex justify-content-center align-items-center hei">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-12">
+                                                                        <p class="bold ">Feb-15<br>Feb-20<br><span
                                                                             class="font-weight-light">5
                                                                             anni</span><span
                                                                             class="font-weight-light fontcontenuto"></span>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 col-lg-10 border-top">
-                                                        <h5 class="sezione fontnero pt-3 bold">Store Manager</h5>
-                                                        <h6 class="sezione font-weight-light fontnero pt-0">Kipoint
-                                                            (Gruppo poste italiane, Confid.station.srl)</h6>
-                                                        <span class="fontcontenuto">
-                                                            <ul>
-                                                                <li class="ul1">
-                                                                    <span>Spedizioni nazionali ed internazionali <span
-                                                                            class="bold">(DDT, CMR, CIM, AWB,
-                                                                            B/L);</span></span>
-                                                                </li>
-                                                                <li class="ul1">
-                                                                    <span><strong> documenti doganali </strong> (import
-                                                                        ed export, incoterms) Fatturazione;</span>
-                                                                </li>
-                                                                <li class="ul1">
-                                                                    <span>gestire in autonomia tutte le attività di
-                                                                        cassa,organizzare la merce in entrata;</span>
-                                                                </li>
-                                                                <li class="ul1">
-                                                                    <span>ottimizzare la relazione con il cliente per
-                                                                        consolidare la brand loyalty;</span>
-                                                                </li>
-                                                                <li class="ul1">
-                                                                    <span>training del nuovo personale assunto,
-                                                                        supervisione del lavoro, organizzazione
-                                                                        turni;</span>
-                                                                </li>
-                                                            </ul>
-                                                        </span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Formazione -->
-                                            <p class="hrb sezione mt-4 mb-0">Formazione</p>
-                                            <div class="container-fluid">
-                                                <div class="row align-item-center">
-                                                    <div class="col-4 col-lg-2 border-right">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center hei">
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <p class="bold mb-0">Feb-21<br><span
-                                                                            class="font-weight-light fontcontenuto">3
-                                                                            mesi</span></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 col-lg-10">
-                                                        <h5 class="sezione fontnero pt-3 bold">( Aulab
-                                                            HackAdemy )Cooding
-                                                            Bootcamp</h5>
-                                                        <h6 class="sezione font-weight-light fontnero pt-0"></h6>
-                                                        <ul>
-                                                            <li class="ul1"><span class="fontcontenuto">Bootcamp
-                                                                    intensivo di coding, skill consolidate: <span
-                                                                        class="bold"> HTML, CSS, Bootstrap 4,
-                                                                        Javascript, Vue.js, PHP, Laravel, Database
-                                                                        (Mysql, Access, SQL), sistemi di versionamente
-                                                                        Git, metodologie agili (SCRUM).
-                                                                    </span></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-4 col-lg-2 border-right border-top">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center hei">
-                                                            <div class="row">
-                                                                <div class="col-12 ">
-                                                                    <p class="bold mb-0">Gen-15<br><span
-                                                                            class="font-weight-light fontcontenuto"></span>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 col-lg-10 border-top ">
-                                                        <h5 class="sezione fontnero pt-3 bold">Lean Management (COB)
-                                                        </h5>
-                                                        <h6 class="sezione font-weight-light fontnero pt-0"></h6>
-                                                        <ul>
-                                                            <li class="ul1"><span class="fontcontenuto">Corso di lean
-                                                                    management.
-                                                                </span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-4 col-lg-2 border-right border-top hrb">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center hei">
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <p class="bold my-0">Lug-08</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-8 col-lg-10 border-top hrb">
-                                                        <h5 class="sezione fontnero pt-3 mb-0 bold mx-auto pt-2">
-                                                            Ragioneria (ITC Pietro Giannone)</h5>
-                                                        <!-- <h6 class="sezione font-weight-light fontnero pt-0"></h6></div> -->
-                                                        <ul>
-                                                            <li class="ul1"><span class="fontcontenuto">Perito tecnico
-                                                                    ragioniere
-                                                                </span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Lingue e interessi-->
-                                            <div class="container-fluid pl-0">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="hrb sezione mt-4 mb-0 wid">Lingue</p>
-                                                        <div class="container">
-                                                            <div class="row justify-content-center">
-
-                                                                <div class="col-12 pr-md-5 pt-4 pb-3">
-                                                                    <span class="fontcontenuto bold">Italiano</span>
-                                                                    <div class="progress  bg-secondary">
-                                                                        <div class="progress-bar bg-dark p5"
-                                                                            role="progressbar" aria-valuenow="10"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 pr-md-5 pb-3">
-                                                                    <span class="fontcontenuto bold">Inglese</span>
-                                                                    <div class="progress  bg-secondary">
-                                                                        <div class="progress-bar bg-dark p4"
-                                                                            role="progressbar" aria-valuenow="10"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 pr-md-5">
-                                                                    <span class="fontcontenuto bold">Spagnolo</span>
-                                                                    <div class="progress  bg-secondary">
-                                                                        <div class="progress-bar bg-dark p1"
-                                                                            role="progressbar" aria-valuenow="10"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                        </div>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
-
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="hrb sezione mt-4 mb-0">
-                                                            Interessi</p>
-                                                        <p class="fontcontenuto pt-3">Costante passione per la <span
-                                                                class="bold">Fotografia e la Videografia</span> (Varie
-                                                            ammissioni a concorsi nazionali di fotografia,
-                                                            un’esposizione a Reggio Emilia presso Citterio SPA),
-                                                            <span class="bold">Progetto Videomusicale Spicy
-                                                                garage</span> sulla piattaforma
-                                                            Youtube, <span class="bold">Footage amatoriali di
-                                                                Viaggio</span>. Passione per la
-                                                            musica e interesse per la tecnologia, <span
-                                                                class="bold">Blockchain</span> in particolare. Passione
-                                                            per i viaggi,
-                                                            la lettura e per lo sport da tavola. <span class="bold">Arte
-                                                                del legno.</span></p>
-                                                        <p></p>
+                                                        <div class="col-8 col-lg-10 border-top">
+                                                            <h5 class="sezione fontnero pt-3 bold">Store Manager</h5>
+                                                            <h6 class="sezione font-weight-light fontnero pt-0">Kipoint
+                                                                (Gruppo poste italiane, Confid.station.srl)</h6>
+                                                                <span class="fontcontenuto">
+                                                                    <ul>
+                                                                        <li class="ul1">
+                                                                            <span>Spedizioni nazionali ed internazionali <span
+                                                                                class="bold">(DDT, CMR, CIM, AWB,
+                                                                                B/L);</span></span>
+                                                                            </li>
+                                                                            <li class="ul1">
+                                                                                <span><strong> documenti doganali </strong> (import
+                                                                                    ed export, incoterms) Fatturazione;</span>
+                                                                                </li>
+                                                                                <li class="ul1">
+                                                                                    <span>gestire in autonomia tutte le attività di
+                                                                                        cassa,organizzare la merce in entrata;</span>
+                                                                                    </li>
+                                                                                    <li class="ul1">
+                                                                                        <span>ottimizzare la relazione con il cliente per
+                                                                                            consolidare la brand loyalty;</span>
+                                                                                        </li>
+                                                                                        <li class="ul1">
+                                                                                            <span>training del nuovo personale assunto,
+                                                                                                supervisione del lavoro, organizzazione
+                                                                                                turni;</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        <!-- Formazione -->
+                                                                        <p class="hrb sezione mt-4 mb-0">Formazione</p>
+                                                                        <div class="container-fluid">
+                                                                            <div class="row align-item-center">
+                                                                                <div class="col-4 col-lg-2 border-right">
+                                                                                    <div
+                                                                                    class="d-flex justify-content-center align-items-center hei">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12">
+                                                                                            <p class="bold mb-0">Feb-21<br><span
+                                                                                                class="font-weight-light fontcontenuto">3
+                                                                                                mesi</span></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-8 col-lg-10">
+                                                                                    <h5 class="sezione fontnero pt-3 bold">( Aulab
+                                                                                        HackAdemy )Cooding
+                                                                                        Bootcamp</h5>
+                                                                                        <h6 class="sezione font-weight-light fontnero pt-0"></h6>
+                                                                                        <ul>
+                                                                                            <li class="ul1"><span class="fontcontenuto">Bootcamp
+                                                                                                intensivo di coding, skill consolidate: <span
+                                                                                                class="bold"> HTML, CSS, Bootstrap 4,
+                                                                                                Javascript, Vue.js, PHP, Laravel, Database
+                                                                                                (Mysql, Access, SQL), sistemi di versionamente
+                                                                                                Git, metodologie agili (SCRUM).
+                                                                                            </span></span></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="col-4 col-lg-2 border-right border-top">
+                                                                                        <div
+                                                                                        class="d-flex justify-content-center align-items-center hei">
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 ">
+                                                                                                <p class="bold mb-0">Gen-15<br><span
+                                                                                                    class="font-weight-light fontcontenuto"></span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-8 col-lg-10 border-top ">
+                                                                                    <h5 class="sezione fontnero pt-3 bold">Lean Management (COB)
+                                                                                    </h5>
+                                                                                    <h6 class="sezione font-weight-light fontnero pt-0"></h6>
+                                                                                    <ul>
+                                                                                        <li class="ul1"><span class="fontcontenuto">Corso di lean
+                                                                                            management.
+                                                                                        </span></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="col-4 col-lg-2 border-right border-top hrb">
+                                                                                    <div
+                                                                                    class="d-flex justify-content-center align-items-center hei">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12">
+                                                                                            <p class="bold my-0">Lug-08</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                            <div class="col-8 col-lg-10 border-top hrb">
+                                                                                <h5 class="sezione fontnero pt-3 mb-0 bold mx-auto pt-2">
+                                                                                    Ragioneria (ITC Pietro Giannone)</h5>
+                                                                                    <!-- <h6 class="sezione font-weight-light fontnero pt-0"></h6></div> -->
+                                                                                    <ul>
+                                                                                        <li class="ul1"><span class="fontcontenuto">Perito tecnico
+                                                                                            ragioniere
+                                                                                        </span></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Lingue e interessi-->
+                                                                        <div class="container-fluid pl-0">
+                                                                            <div class="row">
+                                                                                <div class="col-6">
+                                                                                    <p class="hrb sezione mt-4 mb-0 wid">Lingue</p>
+                                                                                    <div class="container">
+                                                                                        <div class="row justify-content-center">
+                                                                                            
+                                                                                            <div class="col-12 pr-md-5 pt-4 pb-3">
+                                                                                                <span class="fontcontenuto bold">Italiano</span>
+                                                                                                <div class="progress  bg-secondary">
+                                                                                                    <div class="progress-bar bg-dark p5"
+                                                                                                    role="progressbar" aria-valuenow="10"
+                                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12 pr-md-5 pb-3">
+                                                                                            <span class="fontcontenuto bold">Inglese</span>
+                                                                                            <div class="progress  bg-secondary">
+                                                                                                <div class="progress-bar bg-dark p4"
+                                                                                                role="progressbar" aria-valuenow="10"
+                                                                                                aria-valuemin="0" aria-valuemax="100">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-12 pr-md-5">
+                                                                                        <span class="fontcontenuto bold">Spagnolo</span>
+                                                                                        <div class="progress  bg-secondary">
+                                                                                            <div class="progress-bar bg-dark p1"
+                                                                                            role="progressbar" aria-valuenow="10"
+                                                                                            aria-valuemin="0" aria-valuemax="100">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <p class="hrb sezione mt-4 mb-0">
+                                                                            Interessi</p>
+                                                                            <p class="fontcontenuto pt-3">Costante passione per la <span
+                                                                                class="bold">Fotografia e la Videografia</span> (Varie
+                                                                                ammissioni a concorsi nazionali di fotografia,
+                                                                                un’esposizione a Reggio Emilia presso Citterio SPA),
+                                                                                <span class="bold">Progetto Videomusicale Spicy
+                                                                                    garage</span> sulla piattaforma
+                                                                                    Youtube, <span class="bold">Footage amatoriali di
+                                                                                        Viaggio</span>. Passione per la
+                                                                                        musica e interesse per la tecnologia, <span
+                                                                                        class="bold">Blockchain</span> in particolare. Passione
+                                                                                        per i viaggi,
+                                                                                        la lettura e per lo sport da tavola. <span class="bold">Arte
+                                                                                            del legno.</span></p>
+                                                                                            <p></p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <!-- Optional JavaScript -->
+                                        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                                        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                                        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                                        crossorigin="anonymous"></script>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                                        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                                        crossorigin="anonymous"></script>
+                                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                                        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                                        crossorigin="anonymous"></script>
+                                    </body>
+                                    
+                                    </html>
